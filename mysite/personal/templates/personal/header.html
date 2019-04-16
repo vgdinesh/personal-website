@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Dinesh Ganapathi</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+
+<body class="body" <iframe scrolling="auto" allowtransparency="true" name="main" style="width:90%;height:90%;background-image:url(static/personal/img/bg.jpg)"> </iframe>
+	<div class="container-fluid" style="min-height:95%; ">
+		<div class="row">
+			  <div class="col-sm-2">
+				  <br>
+				  <center>
+					<img src="{% static 'personal/img/profile.jpg' %}" class="responsive-img" style='max-height:100px;' alt="face">
+				  </center>
+			  </div>
+			  <div class="col-sm-10">
+				  <br>
+				  <center>
+				  <h2> Dinesh Ganapathi | தினேஷ் கணபதி</h2>
+				  <h6>உள்ளுவ தெல்லாம் உயர்வுள்ளல் மற்றது</h6>
+							<h6>தள்ளினும் தள்ளாமை நீர்த்து.</h6> <a href="http://agaram-thirukkural.blogspot.com/2009/04/0596.html" target="blank"> <p>குறள் -- 0596<p> </a> 	 
+				  
+				  </center>
+			  </div>
+		</div><hr>
+
+		<div class="row">
+		  <div class="col-sm-2">
+		  <br>
+
+		  <br>
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix- id="sidebar" style="background-color:#fff">-->
+			<div class="navbar-inner well bs-sidebar navbar-inner" id="sidebar"  style="background-body:transparent">
+			  <ul class="nav nav-pills nav-stacked">
+				<li class="nav-item"><a class="nav-link" href='/home'>Home</a></li>
+				<li class="nav-item"><a class="nav-link" href='/blog'>Blog</a></li>
+				<li class="nav-item"><a class="nav-link" href='/resume'>Resume</a></li>
+				<li class="nav-item"><a class="nav-link" href='/contact'>Contact</a></li>
+			  </ul>
+			</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+		  <div class="col-sm-10">
+		  
+			<div class='container-fluid'>
+			<br><br>
+			   {% block content %}
+			   {% endblock %}	
+			</div>
+		  </div>
+		</div> 
+	</div>
+	<footer>
+		<div class="container-fluid" style='margin-left:10px'>
+			<p><a href="https://dineshganapathi.wordpress.com/" target="blank">WordPress-WebSite</a> | <a href="https://www.instagram.com/dineshvgofficial/" target="blank">Instagram </a> | <a href="https://www.facebook.com/dineshvgofficial" target="blank">FaceBook</a> | <a href="http://127.0.0.1:8000/contact/" target="blank">Contact</a></p>
+		</div>
+		<div  align='right'>
+		<p>Powered By Django. | Copyright © 2018 All rights are recevied by Dinesh Ganapathi. | </p> 
+		</div>
+	</footer>	
+	
+</body>
+
+</html>
